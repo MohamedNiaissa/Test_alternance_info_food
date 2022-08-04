@@ -38,7 +38,7 @@ async function displayItems(url){
                     let btnESP = document.createElement('a');
                     btnESP.className = "ESP";
                     btnESP.innerHTML = "Plus d'informations";
-                    btnESP.setAttribute("href","Details.html");
+                    btnESP.setAttribute("href","details.html");
     
                     prods.appendChild(divProd);
                     divProd.appendChild(imgProd);
@@ -56,11 +56,6 @@ async function displayItems(url){
                         localStorage.setItem("categories",data.products[i].categories);
                         localStorage.setItem("Ancien packaging", data.products[i].packaging_old)
 
-                        let mainPart = document.querySelector(".mainPart");
-                        let slideContainer = document.querySelector(".slide-container");
-                        mainPart.remove();
-                        slideContainer.remove();
-                        console.log('icinjii')
                         
                     })
     
@@ -123,22 +118,6 @@ async function produitFrance() {
 
  }
 
-//  async function Desc(){
-//     new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             let allESP = document.querySelectorAll(".ESP");
-//             for(let i = 0; i < allESP.length ; i++){
-//                 allESP[i].addEventListener('click',function(){
-//                     console.log('im here')
-                    
-//                 })
-
-//             }
-           
-//       }, 1000)
-//     });
-
-//  }
 
   produitFrance();
   produitUSA();

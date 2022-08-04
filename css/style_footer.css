@@ -1,6 +1,6 @@
 .footer{
         position: absolute;
-    
+        color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -9,7 +9,5 @@
         background-image: url("/assets/vegetables.jpg");
         background-size: cover;
         filter: grayscale(70%);
-        font-size:30px;
-    
-    
+        font-size:30px;    
     }

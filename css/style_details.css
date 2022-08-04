@@ -1,0 +1,24 @@
+.titreItem{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.imgEtDesc{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+.description{
+    text-align: center;
+    margin-top: 200px;
+    
+}
+
+.footer{
+    margin-top: 100px;
+}

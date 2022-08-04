@@ -1,9 +1,16 @@
 body{
     padding: 0;
     margin: 0;
-
+    background-color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
 }
-
+.divImg{
+    height:400px;
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url("../assets/fruits.jpg");
+    background-size: cover;
+}
 .header{
     display: flex;
     align-items: flex-start;

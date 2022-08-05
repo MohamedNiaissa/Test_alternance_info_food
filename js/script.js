@@ -119,8 +119,43 @@ async function produitFrance() {
  }
 
 
+ async function cherche(){
+    new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let btnrech = document.querySelector(".btnrech");
+        
+            btnrech.addEventListener('click',function(){
+                let chercheProduit = document.querySelector(".chercheProduit");
+                let divProd = document.querySelectorAll(".divProd");
+                let nomProd = document.querySelectorAll(".nomProd");
+                console.log("ui")
+                console.log(divProd)
+
+                for(let i = 0;i < divProd.length; i++){
+                 console.log("ui1")
+                 console.log(nomProd[i].textContent)
+                 console.log(cherche)
+                    if (chercheProduit.value.includes(nomProd[i].textContent)){
+                        divProd[i].style.display = "bloc";
+                    }else{
+                        divProd[i].style.display = "none";
+                        console.log('no')
+
+                    }
+                }
+                
+          })
+
+      }, 1000)
+    });
+
+ }
+ 
+
   produitFrance();
   produitUSA();
   reset();
+
+  cherche();
 
 // Desc();

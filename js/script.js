@@ -132,10 +132,8 @@ async function produitFrance() {
                 console.log(divProd)
 
                 for(let i = 0;i < divProd.length; i++){
-                 console.log("ui1")
-                 console.log(nomProd[i].textContent)
-                 console.log(cherche)
-                    if (chercheProduit.value.includes(nomProd[i].textContent)){
+             
+                    if (chercheProduit.value.toUpperCase().includes(nomProd[i].textContent.toUpperCase())){
                         divProd[i].style.display = "bloc";
                     }else{
                         divProd[i].style.display = "none";
